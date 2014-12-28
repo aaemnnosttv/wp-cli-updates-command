@@ -10,7 +10,6 @@ class Updates_Command extends WP_CLI_Command
 	 * Updates
 	 *
 	 * @subcommand check
-	 * @synopsis <datum> [--group-by=<post-arg>] [--period=<period>] [--start-date=<yyyy-mm-dd>] [--end-date=<yyyy-mm-dd>] [--format=<format>]
 	 */
 	public function check( $args, $assoc_args ) {
 
