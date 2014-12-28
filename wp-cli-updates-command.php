@@ -29,8 +29,10 @@ class Updates_Command extends WP_CLI_Command
 			foreach ( (array) $plugins as $plugin_file => $plugin_data )
 				plugins_api('plugin_information', array('slug' => $plugin_data->update->slug ));
 
-			WP_CLI::success('Plugin updates refreshed');
+			WP_CLI::success('Plugin updates refreshed.');
 		}
+		else
+			WP_CLI::log('All plugins are up to date.');
 	}
 
 	function check_themes()
@@ -39,8 +41,10 @@ class Updates_Command extends WP_CLI_Command
 		
 		if ( ! empty( $themes ) ) {
 			
-			WP_CLI::success('Theme updates refreshed');
+			WP_CLI::success('Theme updates refreshed.');
 		}
+		else
+			WP_CLI::log('Themes are up to date.');
 	}
 
 }
