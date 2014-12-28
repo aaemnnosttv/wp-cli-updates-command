@@ -1,0 +1,22 @@
+{
+	"name": "aaemnnosttv/wp-cli-updates-command",
+	"type": "command",
+	"description": "",
+	"keywords": ["wp-cli"],
+	"homepage": "https://github.com/aaemnnosttv/wp-cli-updates-command",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Evan Mattson",
+			"email": "me@aaemnnost.tv",
+			"homepage": "http://aaemnnost.tv",
+			"role": "Developer"
+		}
+	],
+	"require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+    	"files": [ "wp-cli-updates-command.php" ]
+    }
+}
