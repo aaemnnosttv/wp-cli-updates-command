@@ -2,6 +2,8 @@
 /**
  * @author aaemnnosttv
  */
+if ( class_exists('WP_CLI_Command') ) :
+
 class Updates_Command extends WP_CLI_Command
 {
 
@@ -50,3 +52,4 @@ class Updates_Command extends WP_CLI_Command
 }
 
 WP_CLI::add_command( 'updates', 'Updates_Command' );
+endif;
